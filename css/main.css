@@ -1,0 +1,302 @@
+/**** App Base styles ****/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:focus {
+	outline: none;
+}
+
+body {
+	line-height: 1.5;
+	font-family: "sans-serif", arial;
+	font-size: 12px;
+	color: #6a6a6a;
+}
+
+a {
+	color: inherit;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/**** App Reused Classes ****/
+
+.fs-24 {
+	font-size: 24px;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+.p-12 {
+	padding: 12px;
+}
+
+.px-12 {
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.py-12 {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.py-6 {
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.p-24 {
+	padding: 24px;
+}
+
+.px-24 {
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+.px-36 {
+	padding-left: 36px;
+	padding-right: 36px;
+}
+
+.m-24 {
+	margin: 24px;
+}
+
+.mt-12 {
+	margin-top: 12px;
+}
+
+.mb-12 {
+	margin-bottom: 12px;
+}
+
+.mb-24 {
+	margin-bottom: 24px;
+}
+
+.mb-0 {
+	margin-bottom: 0;
+}
+
+.fa {
+	margin-right: 8px;
+}
+
+.row {
+	display: flex;
+	width: 100%;
+}
+
+.justify-content-around {
+	justify-content: space-around;
+}
+
+.justify-content-between {
+	justify-content: space-between;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.link-primary {
+	color: #a6c94b;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.btn {
+	display: inline-block;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	background-color: transparent;
+	border: 1px solid transparent;
+	padding: 8px 12px;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 4px;
+	cursor: pointer;
+	min-width: 125px;
+}
+
+.btn-primary {
+	background-color: #e47822;
+}
+
+.btn-secondary {
+	background-color: #a6c94b;
+}
+
+.box {
+	border: 1px solid #a6c94b;
+	border-radius: 4px;
+}
+
+.box .fa-info-circle {
+	vertical-align: middle;
+	font-size: 24px;
+	color: #a6c94b;
+}
+
+.shadow {
+	box-shadow: 0 3px 3px -2px rgba(0, 0, 0, .2), 0 3px 4px 0 rgba(0, 0, 0, .14), 0 1px 8px 0 rgba(0, 0, 0, .12);
+}
+
+.form-control {
+	width: 90%;
+	display: inline-block;
+	border: none;
+	border-bottom: 1px solid #dadada;
+	margin-left: 1%;
+}
+
+/**** App Header Styles *****/
+
+.app-header {
+	background: #4a4a4a;
+}
+
+.logo {
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/**** Section-Latest Info Styles *****/
+
+.sec-latest {
+	background: #e4e4e4;
+	border: 1px solid #d3d3d3;
+	border-radius: 4px;
+	font-size: 14px;
+	line-height: 1;
+}
+
+.sec-latest h2 {
+	position: relative;
+}
+
+.sec-latest h2::before {
+	font-family: FontAwesome;
+	content: "\f06a";
+	position: absolute;
+	left: 0;
+	color: #e47822;
+}
+
+.sec-latest a {
+	text-decoration: none;
+}
+
+.sec-latest .btn-primary {
+	margin-right: 12px;
+}
+
+/**** Section Content Styles *****/
+
+.sec-content p {
+	flex-basis: 66.66%;
+}
+
+/**** Section Cards Styles *****/
+
+.sec-cards .box {
+	flex-basis: 33.33%;
+	margin: 24px;
+	align-items: stretch;
+}
+
+.sec-cards ul li {
+	margin-bottom: 8px;
+}
+
+.sec-cards ul li .fa {
+	width: 12px;
+	text-align: center;
+	font-size: 12px;
+	color: #a6c94b;
+}
+
+.sec-cards ul li:last-child .fa {
+	color: inherit;
+}
+
+.sec-cards .data-table .row > div {
+	flex: 1;
+	padding: 4px 12px;
+}
+
+.sec-cards .data-table .row:nth-child(odd) > div {
+	background: #f7f7f7;
+}
+
+.sec-cards .data-table .row:nth-child(even) > div {
+	background: #f2f2f2;
+}
+
+.sec-cards .data-table span {
+	font-size: 11px;
+	opacity: 0.6;
+}
+
+.sec-cards .form-group {
+	position: relative;
+}
+
+.sec-cards .form-group::before {
+	font-family: FontAwesome;
+	content: "\f142";
+	position: absolute;
+	left: 4px;
+	top: 20px;
+}
+
+.sec-cards .google-maps iframe {
+	width: 100% !important;
+	height: 260px !important;
+}
+
+/**** App Footer Styles *****/
+
+.app-footer {
+	background: #ededed;
+	padding: 16px 24px;
+	font-size: 80%;
+}
+
+
+/**** App Responsive Tablet and Mobile Styles *****/
+
+@media screen and (max-width: 992px) {
+	.row {
+		flex-wrap: wrap;
+	}
+
+	.row > * {
+		margin-top: 12px;
+		flex: auto;
+	}
+
+	.sec-cards .box {
+		flex-basis: 100%;
+	}
+}
